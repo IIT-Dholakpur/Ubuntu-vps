@@ -23,6 +23,7 @@ jobs:
           sudo apt install -y openssh-server
           sudo service ssh start
           sudo apt update && sudo apt upgrade -y
+          sudo npm install -g hypertunnel
 
       - name: Set up SSH user and password
         run: |
@@ -34,7 +35,7 @@ jobs:
       - name: Create SSH tunnel with Serveo
         run: |
           # Start SSH tunnel using Serveo (it will give you a hostname)
-          npx hypertunnel --port 22 &
+          hypertunnel --port 22 &
           
           # Print the connection info
           echo "Server is now accessible. Check the output above for the Serveo hostname"
