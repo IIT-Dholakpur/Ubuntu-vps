@@ -1,4 +1,4 @@
-name: Run Ubuntu VPS with SSH and Serveo
+name: Run Ubuntu VPS with SSH and Hypertunnel
 
 on:
   workflow_dispatch:
