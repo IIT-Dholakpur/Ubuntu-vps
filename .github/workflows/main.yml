@@ -42,7 +42,7 @@ jobs:
 
           # Add public SSH key
           sudo mkdir -p /home/ubuntu/.ssh
-          echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL2EOqkddoLANSS02VXkuCAvwoLVpGXtzOFaI+toXyOx nitinbhujwa@gmail.com' | sudo tee /home/ubuntu/.ssh/authorized_keys
+          echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQChDyuUg8oixehF5DVHG5MsCTZ3l+TiHXEmpNdZoS7lsqoGKh9s+5j8pNzi14ho/p+Vcuct1xTChMdDU6GRn32KV/aa2oWzrh14GxWBfLL3GyZKJzuSLnQsrdxQKYl1MRn0YLyqUJb4Yh+AqYlEXnSGX0WzUFpi9+Sq/UAf+C0Tegln8hGDP0d7DWJNO+2MVxw90G1FyumJqQFsOxDmgpczyJi1UrAWoUBINr1ITw3zo4BiQ6V6HjovF8nbSC0gmEoaYhoYUy+VQE9C3eAGBTpHezxWz6Pm0ZtyaeIjfyTA4R44Trgn9pq/f/I/lVJ6cxdi9CoaWYrcrxQ29WCAULgskQplyk3RIel7hjOSy6nTrQsVsOZeCRQg8+RX71h/UVZC81SH+esg2G/XlTIgqb/o7j6gP2tArK++WTpyYVHCWKSRyvTsUcjE2HMeL4DPMJ13IJhMeXDh1bbCDnO5iQ0Ggfl5FeGf277QRuNMLWReUTR6JA31vMLbC9+93X3YKNLQmVMzdbVzA/sckEOUdb8ae6CsuSe7bmd4NqB4PSt3uBjOjRKqNTRqzmkC9SyXTyAqF3JeDYBMPN70B0GjHijvCL5FyTfokiUbN8H0YxH34wD24i4HGQoZSlc6U3YS+vLxRDXb8nMbZk3C19Hi23vcUpUzqW7KmI46hkkYfUwMHw== nitinbhujwa@gmail.com' | sudo tee /home/ubuntu/.ssh/authorized_keys
           sudo chown -R ubuntu:ubuntu /home/ubuntu/.ssh
           sudo chmod 700 /home/ubuntu/.ssh
           sudo chmod 600 /home/ubuntu/.ssh/authorized_keys
